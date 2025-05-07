@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sivarubini | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #ffffff);
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrrb_PkdzCjYoljYvFNG_EGqt1GNl-5HM-sg&s");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #003366;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      height: 100vh;
+      padding: 6rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 600px;
+    }
+    .hero-text h1 {
+      font-size: 3.25rem;
+      color: #003366;
+    }
+    .hero-text h2 {
+      color: #555;
+      margin: 0.5rem 0 1rem;
+    }
+    .hero-text p {
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-right: 1rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    .hero-img img {
+      max-width: 300px;
+      border-radius: 50%;
+      border: 4px solid #003366;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    section h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    #contact p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #003366;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Sivarubini</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Sivarubini</h1>
+      <h2>Aspiring Full-Stack Developer</h2>
+      <p>Dedicated and highly motivated engineering student with a strong foundation in full-stack development and UI/UX design. Proficient in Java, HTML, CSS, and JavaScript with hands-on project experience and a passion for learning.</p>
+      <a class="btn" href="#contact">Hire Me</a>
+      <a class="btn" href="Sivarubini_Resume.pdf" download>Download Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="bestpic.jpg" alt="Sivarubini Profile Picture">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and motivated Full-Stack Developer with a background in Artificial Intelligence and Data Science, currently pursuing my degree with a CGPA of 8.68. I have hands-on experience in MERN stack and Java full-stack development, and I enjoy building responsive, real-world web applications. I’ve completed a UI/UX internship at Next Skill Technologies, where I designed user-friendly interfaces using tools like Figma and Balsamiq. My project, "Voice-Based Email for the Visually Impaired," won first place in a department-level project expo, reflecting my ability to create innovative and impactful solutions. I’m also a Teaching Assistant at NxtWave CCBP 4.0 Academy, where I guide learners in full-stack concepts.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Java, Python, C</li>
+      <li>Web Technologies: HTML, CSS, JavaScript, Node.js, Express.js</li>
+      <li>Database: MySQL</li>
+      <li>Tools: Figma, Balsamiq, VS Code, Git</li>
+      <li>Soft Skills: Communication, Teamwork, Problem-Solving</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; padding: 1rem;">
+      
+      <div style="background: #f9f9f9; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h3>Voice-Based Email for Visually Impaired</h3>
+        <p>Developed an accessible email system using Python, designed to assist visually impaired users. This project secured <strong>1st place</strong> in a department-level expo, showcasing innovation and inclusivity.</p>
+      </div>
+      
+      <div style="background: #f9f9f9; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h3>Task Manager App</h3>
+        <p>A full-stack task management app built using the <strong>MERN stack</strong>. It includes features like task creation, status updates, and filtering for efficient personal productivity tracking.</p>
+      </div>
+      
+      <div style="background: #f9f9f9; padding: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <h3>Thrive Together: Support, Educate, Empower</h3>
+        <p>A responsive and interactive web application designed to educate women and children on personal safety through gamified learning. 
+          Promotes awareness and empowerment through a user-friendly interface.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li> 1st Place in Project Expo for “Voice-Based Email for the Visually Impaired”</li>
+      <li> Completed UI/UX Internship at Next Skill Technologies (Figma, Balsamiq)</li>
+      <li>Scored 85% in NPTEL Soft Skills Certification</li>
+      <li>Linguaskill English Test – B1 Level</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sivarubiniuthamaraj@gmail.com">sivarubiniuthamaraj@gmail.com</a></p>
+    <p>Phone: +91-6380181092</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sivarubini5/" target="_blank">linkedin.com/in/sivarubini</a></p>
+    <p>GitHub: <a href="https://github.com/sivarubini5" target="_blank">github.com/sivarubini</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sivarubini. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
